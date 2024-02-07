@@ -1,58 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
 	<title>NAPS - National Association to Promote Siestas</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
-	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700" />
+	<link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body>
+	<header>
+		<div class="content-wrapper">
+			<img src="img/naps-logo@2x.png" class="logo" alt="NAPS Logo" />
+			<nav>
+				<ul>
+					<li><a href="#">SiestaCon</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-<header>
-	<div class="content-wrapper">
-		<img src="img/naps-logo@2x.png" class="logo" alt="NAPS Logo">
-		<nav>
-			<ul>
-				<li><a href="#">SiestaCon</a></li>
-				<li><a href="#">Press</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav>
+	<div class="hero">
+		<h1>National Association to Promote Siestas</h1>
+		<p>Promoting siestas for increased health & happiness.</p>
 	</div>
-</header>
 
-<div class="hero">
-	<h1>National Association to Promote Siestas</h1>
-	<p>Promoting siestas for increased health & happiness.</p>
-</div>
+	<main role="main">
+		<div class="content-wrapper">
+			<p id="press-quote">
+				NAPS is by far the most significant cultural force of the decade. —
+				New York Times
+			</p>
+			<p>
+				We work hard to make sure your boss, your family, and your friends
+				know that it’s okay for you to take a siesta wherever and whenever you
+				want. We also educate city governments nation-wide about the benefits
+				of sleeping on park benches. Thanks to our efforts, most criminals
+				respect the siesta and will not steal your personal belongings while
+				you take a siesta in a public area. We’re currently working with the
+				U.S. congress to introduce legislation designed to safeguard the jobs
+				of employees who take siestas at work. We also help fund many local
+				chapter organizations. If you’re interested in starting a NAPS chapter
+				in your local community, please <a href="#">contact&nbsp;us</a>.
+			</p>
+			<h2>Our History</h2>
+			<figure>
+				<img src="img/william-dozer@2x.jpg" alt="William Dozer" />
+				<figcaption>William Dozer on that fateful day</figcaption>
+			</figure>
+			<p>
+				NAPS began in 1938 when our founder, William Dozer, was fired from his
+				job for taking a siesta during work hours at a Baltimore factory.
+				William realized that siestas are a fundamental human right, so he
+				organized a strike at the factory. The strike was a success and led to
+				a company-wide policy which allowed three siestas per day. After the
+				successful strike, William Dozer started NAPS with the goal of
+				implementing similar policies across the United States. Today NAPS
+				operates out of Washington, D.C. with local chapters in all 50 states,
+				advocating for free sleep in all spheres of life.
+			</p>
+		</div>
+	</main>
 
-<main role="main">
-	<div class="content-wrapper">
-		<p id="press-quote">NAPS is by far the most significant cultural force of the decade. — New York Times</p>
-		<p>We work hard to make sure your boss, your family, and your friends know that it’s okay for you to take a siesta wherever and whenever you want. We also educate city governments nation-wide about the benefits of sleeping on park benches. Thanks to our efforts, most criminals respect the siesta and will not steal your personal belongings while you take a siesta in a public area. We’re currently working with the U.S. congress to introduce legislation designed to safeguard the jobs of employees who take siestas at work. We also help fund many local chapter organizations. If you’re interested in starting a NAPS chapter in your local community, please <a href="#">contact&nbsp;us</a>.</p>
-		<h2>Our History</h2>
-		<figure>
-			<img src="img/william-dozer@2x.jpg" alt="William Dozer">
-			<figcaption>William Dozer on that fateful day</figcaption>
-		</figure>
-		<p>NAPS began in 1938 when our founder, William Dozer, was fired from his job for taking a siesta during work hours at a Baltimore factory. William realized that siestas are a fundamental human right, so he organized a strike at the factory. The strike was a success and led to a company-wide policy which allowed three siestas per day. After the successful strike, William Dozer started NAPS with the goal of implementing similar policies across the United States. Today NAPS operates out of Washington, D.C. with local chapters in all 50 states, advocating for free sleep in all spheres of life.</p>
-	</div>
-</main>
-
-<footer>
-	<p>Copyright © National Association to Promote Siestas</p>
-</footer>
-<script>
-let quotesArray = [
-'first quote',
-'second quote',
-'third quote'
-
- ];
-
-
-
-</script>
+	<footer>
+		<p>Copyright © National Association to Promote Siestas</p>
+	</footer>
+	<script>
+		let quotesArray = [
+			"NAPS is by far the most significant cultural force of the decade. — New York Times",
+			"These days sleeping at your desk is not just acceptable, it’s encouraged. — The Atlantic",
+			"NAPS has changed the way people think about sleep, on a grand scale. — Washington Post",
+			"Happiness increased 200% since NAPS began promoting siestas. — National Science Review",
+			"NAPS has ushered in a new era of sleep. — USA Today",
+			"Not surprisingly, more siestas means more productivity. — Wall Street Journal",
+			"NAPS is doing the hard work of helping people get the rest they need. — U.S. News",
+		]
+		let randomNumber = Math.floor(Math.random() * quotesArray.length) //gen ran num for quotes
+		document.getElementById('press-quote').textContent = quotesArray[randomNumber] // change the textContent of the press-quote element to one of the items in the quotes array using random number as the index selector
+	</script>
 </body>
+
 </html>
