@@ -79,8 +79,9 @@
 			"NAPS is doing the hard work of helping people get the rest they need. — U.S. News",
 		]
 		let randomNumber = Math.floor(Math.random() * quotesArray.length) //gen ran num for quotes
-		document.getElementById('press-quote').textContent = quotesArray[randomNumber] // change the textContent of the press-quote element to one of the items in the quotes array using random number as the index selector
-	</script>
+		document.getElementById('press-quote').textContent = quotesArray[randomNumber].split('—')[0] // change the textContent of the press-quote element to one of the items in the quotes array using random number as the index selector
+console.log(quotesArray[randomNumber].split('—'))
+</script>
 </body>
 
 </html>
